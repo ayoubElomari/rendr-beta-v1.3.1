@@ -1,0 +1,13 @@
+{
+  "version": "1.0.0",
+  "entry": "RedditPost.js",
+  "requirements": {
+    "ignoreWarnings": true,
+    "files": [
+      "files/post_template.html",
+      "files/media/Verified-icon.png",
+      "files/media/Verified-icon.svg",
+      "files/media/default_pfp.png"
+    ]
+  }
+}

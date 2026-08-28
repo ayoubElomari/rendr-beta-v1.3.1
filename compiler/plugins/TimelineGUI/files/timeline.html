@@ -1,0 +1,194 @@
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+  rel="stylesheet"
+/>
+<div id="timeline-gui">
+  <div id="top-area">
+    <div id="left-area">
+      <h2 class="not-implemented">Nothing here yet!</h2>
+    </div>
+    <div id="playback-area">
+      <div id="playback-wrapper">
+        <div id="playback-container">
+          <div id="video-preview"></div>
+        </div>
+      </div>
+      <div class="playback-controls">
+        <div class="elapsed-time-container">
+          <span class="elapsed-time GUI-elapsed-time" id="elapsed-time"
+            >00:00:00:00</span
+          >
+          <span class="seperator">/</span>
+          <div id="total-time" class="GUI-total-time">00:00:00:00</div>
+        </div>
+        <div class="controls-container">
+          <button id="prev-frame-button">
+            <img
+              draggable="false"
+              src="plugins/TimelineGUI/media/icons/backwards icon.svg"
+              alt=""
+            />
+          </button>
+          <div class="vertical-seperator"></div>
+          <button id="play-button">
+            <img
+              draggable="false"
+              src="plugins/TimelineGUI/media/icons/play icon.svg"
+              alt=""
+            />
+          </button>
+          <div class="vertical-seperator"></div>
+          <button id="next-frame-button">
+            <img
+              draggable="false"
+              src="plugins/TimelineGUI/media/icons/forwards icon.svg"
+              alt=""
+            />
+          </button>
+        </div>
+
+        <div class="fullscreen-container">
+          <span id="playback-notification">Tick rate: 20ms</span>
+          <div class="vertical-seperator"></div>
+          <button id="socialmedia-ui-container">
+            <img
+              draggable="false"
+              src="plugins/TimelineGUI/media/icons/tiktok icon.svg"
+              alt=""
+            />
+          </button>
+          <div class="vertical-seperator"></div>
+          <button id="fullscreen-button">
+            <img
+              draggable="false"
+              src="plugins/TimelineGUI/media/icons/fullscreen icon.svg"
+              alt=""
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="control-area">
+      <h2 class="not-implemented">Nothing here yet!</h2>
+    </div>
+  </div>
+  <div id="timeline-area">
+    <div class="timeline-tracks-container">
+      <div class="timeline-ruler-container">
+        <div class="seeked-time-container">
+          <div id="seeked-time" class="GUI-elapsed-time">00:00:00:00</div>
+        </div>
+        <div id="timeline-ruler-wrapper">
+          <canvas id="timeline-ruler"></canvas>
+        </div>
+      </div>
+      <div class="track-type-container element-tracks-container">
+        <div class="timeline-track element-track" id="track-1">
+          <div class="track-controls">
+            <span class="track-name">Track 1</span>
+            <div class="track-actions">
+              <button id="toggle-visibility-btn" title="Toggle Visibility">
+                <img
+                  draggable="false"
+                  src="plugins/TimelineGUI/media/icons/eye icon.svg"
+                  alt=""
+                />
+              </button>
+              <button id="select-all-btn" title="Select All Clips">
+                <img
+                  draggable="false"
+                  src="plugins/TimelineGUI/media/icons/select-all icon.svg"
+                  alt=""
+                />
+              </button>
+              <button
+                id="toggle-animation-pannel-btn"
+                title="Toggle Animation Panel"
+              >
+                <img
+                  draggable="false"
+                  src="plugins/TimelineGUI/media/icons/animation icon.svg"
+                  alt=""
+                />
+              </button>
+            </div>
+          </div>
+          <div class="track-content">
+            <div class="clips-container">
+              <div class="timeline-clip" id="clip-1" data-duration="100">
+                <div class="clip-controls">
+                  <span class="clip-name">Clip 1</span>
+                </div>
+                <div class="clip-content"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-track element-track" id="track-2">
+          <div class="track-controls">
+            <span class="track-name">Track 2</span>
+            <div class="track-actions">
+              <button id="toggle-visibility-btn">
+                <img
+                  draggable="false"
+                  src="plugins/TimelineGUI/media/icons/eye icon.svg"
+                  alt=""
+                />
+              </button>
+              <button id="select-all-btn">
+                <img
+                  draggable="false"
+                  src="plugins/TimelineGUI/media/icons/select-all icon.svg"
+                  alt=""
+                />
+              </button>
+              <button id="toggle-animation-pannel-btn">
+                <img
+                  draggable="false"
+                  src="plugins/TimelineGUI/media/icons/animation icon.svg"
+                  alt=""
+                />
+              </button>
+            </div>
+          </div>
+          <div class="track-content">
+            <div class="clips-container"></div>
+          </div>
+        </div>
+      </div>
+      <div id="track-type-seperator"></div>
+      <div class="track-type-container audio-tracks-container">
+        <div class="timeline-track audio-track" id="audio-track-1">
+          <div class="track-controls">
+            <span class="track-name">Audio Track 1</span>
+            <div class="track-actions">
+              <button id="toggle-visibility-btn" title="Toggle Visibility">
+                <img
+                  draggable="false"
+                  src="plugins/TimelineGUI/media/icons/eye icon.svg"
+                  alt=""
+                />
+              </button>
+              <button id="select-all-btn" title="Select All Clips">
+                <img
+                  draggable="false"
+                  src="plugins/TimelineGUI/media/icons/select-all icon.svg"
+                  alt=""
+                />
+              </button>
+            </div>
+          </div>
+          <div class="track-content">
+            <div class="clips-container"></div>
+          </div>
+        </div>
+      </div>
+      <div id="filler-track"></div>
+      <div id="playhead">
+        <div id="playhead-line"></div>
+      </div>
+    </div>
+  </div>
+</div>

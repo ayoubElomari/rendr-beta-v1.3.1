@@ -1,0 +1,18 @@
+{
+  "version": "1.0.0",
+  "entry": "entry.js",
+  "requirements": {
+    "ignoreWarnings": true,
+    "files": [
+      "files/timeline.html",
+      "files/style/timeline.css",
+      "files/js/layout.js",
+      "files/js/controls.js",
+      "files/js/tracks.js",
+      "files/js/timelineRuler.js",
+      "files/js/frameChange.js",
+      "files/js/audioHandler.js"
+    ],
+    "externalLibraries": ["https://unpkg.com/split.js/dist/split.min.js"]
+  }
+}

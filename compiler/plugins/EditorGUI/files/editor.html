@@ -1,0 +1,70 @@
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+  rel="stylesheet"
+/>
+<div id="editor-gui">
+  <div id="editor-area"></div>
+  <div id="playback-area">
+    <div id="playback-wrapper">
+      <div id="playback-container">
+        <div id="video-preview"></div>
+      </div>
+    </div>
+    <div class="playback-controls">
+      <div class="elapsed-time-container">
+        <span class="elapsed-time GUI-elapsed-time" id="elapsed-time"
+          >00:00:00:00</span
+        >
+        <span class="seperator">/</span>
+        <div id="total-time" class="GUI-total-time">00:00:00:00</div>
+      </div>
+      <div class="controls-container">
+        <button id="prev-frame-button">
+          <img
+            draggable="false"
+            src="plugins/EditorGUI/media/icons/backwards icon.svg"
+            alt=""
+          />
+        </button>
+        <div class="vertical-seperator"></div>
+        <button id="play-button">
+          <img
+            draggable="false"
+            src="plugins/EditorGUI/media/icons/play icon.svg"
+            alt=""
+          />
+        </button>
+        <div class="vertical-seperator"></div>
+        <button id="next-frame-button">
+          <img
+            draggable="false"
+            src="plugins/EditorGUI/media/icons/forwards icon.svg"
+            alt=""
+          />
+        </button>
+      </div>
+
+      <div class="fullscreen-container">
+        <span id="playback-notification"></span>
+        <div class="vertical-seperator"></div>
+        <button id="socialmedia-ui-container">
+          <img
+            draggable="false"
+            src="plugins/EditorGUI/media/icons/tiktok icon.svg"
+            alt=""
+          />
+        </button>
+        <div class="vertical-seperator"></div>
+        <button id="fullscreen-button">
+          <img
+            draggable="false"
+            src="plugins/EditorGUI/media/icons/fullscreen icon.svg"
+            alt=""
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

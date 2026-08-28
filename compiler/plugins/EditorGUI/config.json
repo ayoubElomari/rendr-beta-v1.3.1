@@ -1,0 +1,20 @@
+{
+  "version": "1.0.0",
+  "entry": "entry.js",
+  "requirements": {
+    "ignoreWarnings": true,
+    "files": [
+      "files/js/helpers.js",
+      "files/js/monacoEditor.js",
+      "files/editor.html",
+      "files/style/editor.css",
+      "files/js/layout.js",
+      "files/js/controls.js",
+      "files/js/frameChange.js"
+    ],
+    "externalLibraries": [
+      "https://unpkg.com/split.js/dist/split.min.js",
+      "https://unpkg.com/panzoom@9.4.0/dist/panzoom.min.js"
+    ]
+  }
+}

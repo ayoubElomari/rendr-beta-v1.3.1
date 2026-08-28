@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Video Engine</title>
+    <style>
+      body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        overflow: hidden;
+        background: black;
+        position: relative;
+      }
+      #record-area {
+        position: relative;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="record-area"></div>
+
+    <!-- Helpers -->
+    <script src="helpers/FrameUtils.js"></script>
+    <script src="helpers/CssValues.js"></script>
+    <script src="helpers/AnimateUtils.js"></script>
+    <script src="helpers/Easing.js"></script>
+    <script src="helpers/StyleManager.js"></script>
+    <script src="helpers/VideoHandler.js"></script>
+
+    <!-- Core utilities -->
+    <script src="core/AssetManager.js"></script>
+    <script src="core/Init.js"></script>
+    <script src="core/DOMTracker.js"></script>
+
+    <!-- Plugins -->
+    <script src="helpers/PluginHelpers.js"></script>
+    <script src="core/PluginManager.js"></script>
+
+    <!-- Element classes -->
+    <script src="elements/AnimatableElement.js"></script>
+    <script src="elements/BackgroundElement.js"></script>
+    <script src="elements/TextElement.js"></script>
+    <script src="elements/ImageElement.js"></script>
+    <script src="elements/VideoElement.js"></script>
+    <script src="elements/CaptionElement.js"></script>
+
+    <!-- Element resolver -->
+    <script src="core/resolveElementType.js"></script>
+
+    <!-- Core engine -->
+    <script src="core/TimelineManager.js"></script>
+    <script src="renderer/Renderer.js"></script>
+
+    <!-- Entry point -->
+    <script src="main.js"></script>
+  </body>
+</html>
