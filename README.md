@@ -7,9 +7,7 @@ frame by frame and encoded to output.
 **This is a legacy version.** It's the engine that was actually in production
 for a long stretch, rendering a large share of the videos published through
 [Shorts Engine](https://github.com/ayoubElomari/shorts-engine), an automated
-video pipeline that ran multiple content channels unattended. A newer rewrite
-(v2) has since replaced it and is closed source for now, this repo exists so
-the earlier, real, working version is visible rather than just described.
+video pipeline that ran multiple content channels unattended. A newer rewrite (v2) has since replaced it. Its browser runtime is public at [Rendr Web](https://github.com/ayoubElomari/Rendr-Web); the capture and encoding pipeline is closed source for now. this repo exists so the earlier, real, working version is visible rather than just described.
 
 ## How it works
 
